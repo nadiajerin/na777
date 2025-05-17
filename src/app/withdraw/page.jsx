@@ -110,9 +110,8 @@ const page = () => {
                                 {/* if there is a button in form, it will close the modal */}
                                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-black text-white p-1">✕</button>
                             </form>
-                            <h3 className="font-bold text-lg">ডিপোজিট!</h3>
-                            <p className="py-4 text-xl font-semibold">বিকাশ ওয়ালেট নাম্বার : 01778229692</p>
-                            <p className='leading-8'>N/A 777 এ টাকা ডিপোজিট করতে উপরের নাম্বারে বিকাশ অ্যাপ থেকে সর্বনিম্ন ৫০০ টাকা সেন্ড মানি করে নিচে লেনদেনের transaction আইডি এবং আপনি যে নাম্বার থেকে টাকা পাঠিয়েছেন সে নাম্বার দিয়ে ফরম টি সম্পূর্ণ করে সাবমিট করুন।</p>
+                            <h3 className="font-bold text-lg">Withdraw</h3>
+                            <p className='leading-8'>N/A 777 এ টাকা Withdraw করতে সর্বনিম্ন ৫০০ টাকা আপনার নাম্বার দিয়ে ফরম টি সম্পূর্ণ করে সাবমিট করুন।</p>
                             <form onSubmit={handleDepositBkash}>
                                 <div className='mt-2'>
                                     <label htmlFor="">Withdraw Amount :</label><br />
@@ -140,8 +139,7 @@ const page = () => {
                                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                             </form>
                             <h3 className="font-bold text-lg">ডিপোজিট!</h3>
-                            <p className="py-4 text-xl font-semibold">নগদ ওয়ালেট নাম্বার : 01778229692</p>
-                            <p className='leading-8'>N/A 777 এ টাকা ডিপোজিট করতে উপরের নাম্বারে নগদ অ্যাপ থেকে সর্বনিম্ন ৫০০ টাকা সেন্ড মানি করে নিচে লেনদেনের transaction আইডি এবং আপনি যে নাম্বার থেকে টাকা পাঠিয়েছেন সে নাম্বার দিয়ে ফরম টি সম্পূর্ণ করে সাবমিট করুন।</p>
+                            <p className='leading-8'>N/A 777 এ টাকা Withdraw করতে সর্বনিম্ন ৫০০ টাকা আপনার নাম্বার দিয়ে ফরম টি সম্পূর্ণ করে সাবমিট করুন।</p>
                             <form onSubmit={handleDepositBNagad}>
                                 <div className='mt-2'>
                                     <label htmlFor="">Withdraw Amount :</label><br />
