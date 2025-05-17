@@ -49,7 +49,7 @@ const page = () => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ number, mobile, email: user.email })
+            body: JSON.stringify({ number, mobile, email: user.email, method: "bkash" })
         });
 
         const data = await response.json();  // <- NEED to await here
@@ -76,7 +76,7 @@ const page = () => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ number, mobile, email: user.email })
+            body: JSON.stringify({ number, mobile, email: user.email, method: "Nagad"})
         });
 
         const data = await response.json();  // <- NEED to await here
