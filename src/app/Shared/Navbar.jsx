@@ -39,7 +39,7 @@ export default function Navbar() {
                 {/* Logo */}
                 <div >
                     <Link href="/">
-                        <p className="text-xl lg:text-2xl font-semibold">N/A </p>
+                        <p className="text-xl lg:text-2xl font-semibold">N/A 777</p>
                     </Link>
                 </div>
 
