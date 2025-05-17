@@ -15,6 +15,7 @@ const page = () => {
         e.preventDefault();
         const form = e.target;
         const name = form.name.value;
+          const number = form.number.value;
         const email = form.email.value;
         const password = form.password.value;
         const balance = 0.00;
@@ -38,7 +39,7 @@ const page = () => {
               headers: {
                 'Content-Type': 'application/json'
               },
-              body: JSON.stringify({ name, email, password, balance })
+              body: JSON.stringify({ name, email, password, balance, number })
             });
       
             const data = await response.json();  // <- NEED to await here
@@ -66,18 +67,28 @@ const page = () => {
                             type="text"
                             name="name"
                             placeholder="Username"
+                              required
                             className="w-full p-3 rounded-md bg-gray-800 text-white mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
                         />
                         <input
                             type="email"
                             placeholder="Email"
                             name="email"
+                             required
+                            className="w-full p-3 rounded-md bg-gray-800 text-white mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                        />
+                         <input
+                            type="number"
+                            placeholder="Mobile Number"
+                            name="number"
+                              required
                             className="w-full p-3 rounded-md bg-gray-800 text-white mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
                         />
                         <input
                             type="password"
                              name="password"
                             placeholder="Password"
+                             required
                             className="w-full p-3 rounded-md bg-gray-800 text-white mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
                         />
                         <button
